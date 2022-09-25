@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ЛР-2</title>
+    <style>
+      textarea {
+          display: block;
+      }
+
+      form {
+          display: inline-block;
+      }
+
+      label {
+          display: block;
+          margin: 10px;
+      }
+
+      fieldset,
+      button {
+          margin-top: 20px;
+          margin-left: 50px;
+      }
+  </style>
+  </head>
+
+  <body>
+    <h1>Проєктування та розробка веб застосунків</h1>
+    <h2>Виконав студент групи КН-32 Грицов Ян Олександрович</h2>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Контактна інформація</legend>
+        <label> ПІБ
+          <input type="text" name="name">
+        </label>
+        <label> Група
+          <select>
+            <option>КН-32</option>
+            <option>КН-31</option>
+            <option>АНД-1</option>
+          </select>
+        </label>
+        <label>Форма навчання
+          <p>
+            <input type="radio" value="budget" name="study form" />Бюджет
+          </p>
+          <p>
+            <input type="radio" value="contract" name="study form"/>Конртакт
+          </p>
+        </label>
+        <label>Електронна пошта
+          <input type="email" name="email">
+        </label>
+        <label>Про себе
+          <textarea name="about" cols="30" rows="10"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Паспортні дані</legend>
+        <label>Серія та номер паспорта
+          <input type="text" name="passport">
+        </label>
+        <label>Індетифікаційний код
+          <input type="text" name="id">
+        </label>
+        <label>Дата народження
+          <input type="date" name="birthday">
+        </label>
+        <label>Стать
+          <p>
+            <input type="radio" value="man" name="gender"/>Ч
+          </p>
+          <p>
+            <input type="radio" value="woman" name="gender"/>Ж
+          </p>
+        </label>
+
+      </fieldset>
+    </body>
