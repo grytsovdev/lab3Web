@@ -17,12 +17,6 @@
           display: block;
           margin: 10px;
       }
-
-      fieldset,
-      button {
-          margin-top: 20px;
-          margin-left: 50px;
-      }
   </style>
   </head>
 
@@ -43,13 +37,9 @@
           </select>
         </label>
         <label>Форма навчання
-          <p>
-            <input type="radio" value="budget" name="study form" />Бюджет
-          </p>
-          <p>
-            <input type="radio" value="contract" name="study form"/>Конртакт
-          </p>
         </label>
+        <input type="radio" value="budget" name="study form">Бюджет
+        <input type="radio" value="contract" name="study form">Конртакт
         <label>Електронна пошта
           <input type="email" name="email">
         </label>
@@ -69,13 +59,12 @@
           <input type="date" name="birthday">
         </label>
         <label>Стать
-          <p>
-            <input type="radio" value="man" name="gender"/>Ч
-          </p>
-          <p>
-            <input type="radio" value="woman" name="gender"/>Ж
-          </p>
         </label>
-
+        <input type="radio" value="man" name="gender">Ч
+        <input type="radio" value="woman" name="gender">Ж
       </fieldset>
-    </body>
+      <button type="submit">
+        Відправити
+      </button>
+    </form>
+  </body>
